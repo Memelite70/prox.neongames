@@ -1,0 +1,24 @@
+<head>
+  <script>
+    function getUrlParameter(name) {
+      name = name.replace(/[[]/, '\$$[').replace(/[]$$]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+    window.addEventListener("DOMContentLoaded", function(){
+      var game = getUrlParameter('game');
+      window.location.href = game;
+    })
+  </script>
+  
+</head>
+<body>
+  <script>
+
+    window.addEventListener("DOMContentLoaded", function(){
+      var game = getUrlParameter('game');
+      window.location.href = game;
+    })
+  </script>
+</body>
