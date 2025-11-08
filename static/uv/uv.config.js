@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/tiw/',
-    bare:'https://historylesson.xyz.cdn.cloudflare.net/b/',
+    bare:'https://focus-bare-seven.vercel.app/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
